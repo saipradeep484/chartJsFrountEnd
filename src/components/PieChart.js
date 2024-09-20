@@ -11,7 +11,7 @@ const PieChart = () => {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:8089/endpoint/products')
+    axios.get('http://localhost:8089/products')
       .then((response) => {
         const apiData = response.data;
 

@@ -39,7 +39,7 @@ const SalesChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8089/endpoint/orders');
+        const response = await axios.get('http://localhost:8089/orders');
         const orders = response.data;
         console.log(orders);  // Check the response
 
